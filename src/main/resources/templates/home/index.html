@@ -8,13 +8,32 @@
     <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
     <title>Projeto Academy</title>
     <meta name="author" content="Ernando">
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<p>Hello World</p>
-<h1 th:text="${msg}"></h1>
+<div th:replace="/fragmentos/fragmentos :: cabecalho"></div>
 
-<button class="btn btn-outline-info">Teste</button>
+<section class="neo-section" style="background-image: url('/img/bg.png')">
+    <div class="sombra"></div>
+    <div class="neo-container text-center">
+        <h1 class="texto-centro">Sistema de Gerenciamento de Alunos</h1>
+        <div class="botoes">
+            <div class="wm">
+                <h5 class="btn">CADASTRAR ALUNO</h5>
+            </div>
+            <div class="wm">
+                <h5 class="btn justify-content-center">ENCONTRAR ALUNO</h5>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+
+<div th:replace="/fragmentos/fragmentos :: rodape"></div>
 
 </body>
 </html>
